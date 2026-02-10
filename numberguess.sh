@@ -3,7 +3,7 @@ clear
 echo Input how big the guessing range should be:
 read maxRangeVal
 clear
-while [[ -z "$maxRangeVal" ]]
+while [[ -z $maxRangeVal ]]
 do
 clear
 echo invalid input, try again:
@@ -12,7 +12,7 @@ done
 randint=$((RANDOM % $maxRangeVal + 1)) #Generate a random number from 1 to the maximum range value set by the user.
 echo Guess a number from 1 to $maxRangeVal:
 read number
-while [ $number != $randint ] || [[ -z "$number" ]]
+while [ $number != $randint ] || [[ -z $number ]]
 do
 if [[ $number < $randint && -n $number ]] #Fixes a bug where giving empty input is seen as lower than the random number.
 then
