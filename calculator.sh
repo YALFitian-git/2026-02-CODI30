@@ -5,7 +5,7 @@ operator="NOT SET"
 menu_options(){
 	clear
 	echo -e "
-	|Choose An Operator|
+	|Choose An Option|
 	------------------
 	|
 	| 1) Set/Change First Number: ($first_val)
