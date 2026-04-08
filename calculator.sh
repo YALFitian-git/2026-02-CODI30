@@ -27,12 +27,12 @@ check_user_input(){
  case $input in 
  	
  	1)
- 		read -p "Input the value of your first number: " firstVal
+ 		read -p "Input the value of your first number: " first_val
  		menu_options
  		check_user_input
  		;;
  	2)
- 		read -p "Input the value of your second number: " secondVal
+ 		read -p "Input the value of your second number: " second_val
  		menu_options
  		check_user_input
  		;;
